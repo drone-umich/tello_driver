@@ -1,0 +1,46 @@
+[0.950s] Invoking command in '/home/albertocastro/tello_driver/src/tello_pkg': PS1=(tello_driver_venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/albertocastro/tello_driver/build/tello_pkg/prefix_override:/home/albertocastro/tello_driver/install/tello_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tello_pkg build --build-base /home/albertocastro/tello_driver/build/tello_pkg/build install --record /home/albertocastro/tello_driver/build/tello_pkg/install.log --single-version-externally-managed
+[1.266s] running egg_info
+[1.267s] creating ../../build/tello_pkg/tello_pkg.egg-info
+[1.267s] writing ../../build/tello_pkg/tello_pkg.egg-info/PKG-INFO
+[1.268s] writing dependency_links to ../../build/tello_pkg/tello_pkg.egg-info/dependency_links.txt
+[1.268s] writing entry points to ../../build/tello_pkg/tello_pkg.egg-info/entry_points.txt
+[1.268s] writing requirements to ../../build/tello_pkg/tello_pkg.egg-info/requires.txt
+[1.269s] writing top-level names to ../../build/tello_pkg/tello_pkg.egg-info/top_level.txt
+[1.269s] writing manifest file '../../build/tello_pkg/tello_pkg.egg-info/SOURCES.txt'
+[1.272s] reading manifest file '../../build/tello_pkg/tello_pkg.egg-info/SOURCES.txt'
+[1.273s] writing manifest file '../../build/tello_pkg/tello_pkg.egg-info/SOURCES.txt'
+[1.274s] running build
+[1.274s] running build_py
+[1.274s] creating /home/albertocastro/tello_driver/build/tello_pkg/build
+[1.274s] creating /home/albertocastro/tello_driver/build/tello_pkg/build/lib
+[1.274s] creating /home/albertocastro/tello_driver/build/tello_pkg/build/lib/tello_pkg
+[1.275s] copying tello_pkg/receiver_node.py -> /home/albertocastro/tello_driver/build/tello_pkg/build/lib/tello_pkg
+[1.275s] copying tello_pkg/controller_node.py -> /home/albertocastro/tello_driver/build/tello_pkg/build/lib/tello_pkg
+[1.275s] copying tello_pkg/template_node.py -> /home/albertocastro/tello_driver/build/tello_pkg/build/lib/tello_pkg
+[1.275s] copying tello_pkg/__init__.py -> /home/albertocastro/tello_driver/build/tello_pkg/build/lib/tello_pkg
+[1.275s] running install
+[1.276s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.276s]   warnings.warn(
+[1.278s] running install_lib
+[1.278s] creating /home/albertocastro/tello_driver/install/tello_pkg/lib/python3.10/site-packages/tello_pkg
+[1.279s] copying /home/albertocastro/tello_driver/build/tello_pkg/build/lib/tello_pkg/receiver_node.py -> /home/albertocastro/tello_driver/install/tello_pkg/lib/python3.10/site-packages/tello_pkg
+[1.279s] copying /home/albertocastro/tello_driver/build/tello_pkg/build/lib/tello_pkg/controller_node.py -> /home/albertocastro/tello_driver/install/tello_pkg/lib/python3.10/site-packages/tello_pkg
+[1.279s] copying /home/albertocastro/tello_driver/build/tello_pkg/build/lib/tello_pkg/template_node.py -> /home/albertocastro/tello_driver/install/tello_pkg/lib/python3.10/site-packages/tello_pkg
+[1.279s] copying /home/albertocastro/tello_driver/build/tello_pkg/build/lib/tello_pkg/__init__.py -> /home/albertocastro/tello_driver/install/tello_pkg/lib/python3.10/site-packages/tello_pkg
+[1.281s] byte-compiling /home/albertocastro/tello_driver/install/tello_pkg/lib/python3.10/site-packages/tello_pkg/receiver_node.py to receiver_node.cpython-310.pyc
+[1.283s] byte-compiling /home/albertocastro/tello_driver/install/tello_pkg/lib/python3.10/site-packages/tello_pkg/controller_node.py to controller_node.cpython-310.pyc
+[1.284s] byte-compiling /home/albertocastro/tello_driver/install/tello_pkg/lib/python3.10/site-packages/tello_pkg/template_node.py to template_node.cpython-310.pyc
+[1.284s] byte-compiling /home/albertocastro/tello_driver/install/tello_pkg/lib/python3.10/site-packages/tello_pkg/__init__.py to __init__.cpython-310.pyc
+[1.285s] running install_data
+[1.286s] creating /home/albertocastro/tello_driver/install/tello_pkg/share/ament_index
+[1.286s] creating /home/albertocastro/tello_driver/install/tello_pkg/share/ament_index/resource_index
+[1.286s] creating /home/albertocastro/tello_driver/install/tello_pkg/share/ament_index/resource_index/packages
+[1.286s] copying resource/tello_pkg -> /home/albertocastro/tello_driver/install/tello_pkg/share/ament_index/resource_index/packages
+[1.287s] copying package.xml -> /home/albertocastro/tello_driver/install/tello_pkg/share/tello_pkg
+[1.287s] running install_egg_info
+[1.289s] Copying ../../build/tello_pkg/tello_pkg.egg-info to /home/albertocastro/tello_driver/install/tello_pkg/lib/python3.10/site-packages/tello_pkg-0.0.0-py3.10.egg-info
+[1.290s] running install_scripts
+[1.317s] Installing controller_node script to /home/albertocastro/tello_driver/install/tello_pkg/lib/tello_pkg
+[1.317s] Installing receiver_node script to /home/albertocastro/tello_driver/install/tello_pkg/lib/tello_pkg
+[1.318s] writing list of installed files to '/home/albertocastro/tello_driver/build/tello_pkg/install.log'
+[1.352s] Invoked command in '/home/albertocastro/tello_driver/src/tello_pkg' returned '0': PS1=(tello_driver_venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/albertocastro/tello_driver/build/tello_pkg/prefix_override:/home/albertocastro/tello_driver/install/tello_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tello_pkg build --build-base /home/albertocastro/tello_driver/build/tello_pkg/build install --record /home/albertocastro/tello_driver/build/tello_pkg/install.log --single-version-externally-managed

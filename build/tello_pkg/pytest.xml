@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="1" tests="3" time="0.437" timestamp="2023-06-14T15:34:30.420050" hostname="albertocastro-MacBookAir"><testcase classname="tello_pkg.test.test_copyright" name="test_copyright" time="0.001"><skipped type="pytest.skip" message="No copyright header has been placed in the generated source file.">/home/albertocastro/tello_driver/src/tello_pkg/test/test_copyright.py:20: No copyright header has been placed in the generated source file.</skipped></testcase><testcase classname="tello_pkg.test.test_flake8" name="test_flake8" time="0.167"><failure message="AssertionError: Found 96 code style errors / warnings:&#10;  ./tello_pkg/receiver_node.py:5:1: F401 'std_msgs.msg.Int64' imported but unused&#10;  ./tello_pkg/receiver_node.py:9:1: E302 expected 2 blank lines, found 1&#10;  ./tello_pkg/receiver_node.py:21:100: E501 line too long (104 &gt; 99 characters)&#10;  ./tello_pkg/receiver_node.py:31:100: E501 line too long (263 &gt; 99 characters)&#10;  ./tello_pkg/receiver_node.py:36:5: E303 too many blank lines (3)&#10;  ./tello_pkg/receiver_node.py:51:1: W293 blank line contains whitespace&#10;  ./tello_pkg/receiver_node.py:75:1: W293 blank line contains whitespace&#10;  ./tello_pkg/receiver_node.py:81:29: E225 missing whitespace around operator&#10;  ./tello_pkg/receiver_node.py:84:35: E225 missing whitespace around operator&#10;  ./tello_pkg/receiver_node.py:87:30: E225 missing whitespace around operator&#10;  ./tello_pkg/receiver_node.py:88:1: W293 blank line contains whitespace&#10;  ./tello_pkg/receiver_node.py:90:30: E225 missing whitespace around operator&#10;  ./tello_pkg/receiver_node.py:93:30: E225 missing whitespace around operator&#10;  ./tello_pkg/receiver_node.py:101:26: W291 trailing whitespace&#10;  ./tello_pkg/receiver_node.py:103:52: E261 at least two spaces before inline comment&#10;  ./tello_pkg/controller_node.py:5:1: F401 'std_msgs.msg.Int64' imported but unused&#10;  ./tello_pkg/controller_node.py:8:1: F401 'asyncio' imported but unused&#10;  ./tello_pkg/controller_node.py:10:1: E302 expected 2 blank lines, found 1&#10;  ./tello_pkg/controller_node.py:21:100: E501 line too long (108 &gt; 99 characters)&#10;  ./tello_pkg/controller_node.py:25:9: E265 block comment should start with '# '&#10;  ./tello_pkg/controller_node.py:30:9: F841 local variable 'commands1' is assigned to but never used&#10;  ./tello_pkg/controller_node.py:61:13: E265 block comment should start with '# '&#10;  ./tello_pkg/controller_node.py:62:13: E265 block comment should start with '# '&#10;  ./tello_pkg/controller_node.py:63:1: W293 blank line contains whitespace&#10;  ./tello_pkg/controller_node.py:65:13: E265 block comment should start with '# '&#10;  ./tello_pkg/controller_node.py:73:13: E265 block comment should start with '# '&#10;  ./tello_pkg/controller_node.py:74:17: E265 block comment should start with '# '&#10;  ./tello_pkg/controller_node.py:75:1: W293 blank line contains whitespace&#10;  ./tello_pkg/controller_node.py:82:28: W291 trailing whitespace&#10;  ./tello_pkg/controller_node.py:84:52: E261 at least two spaces before inline comment&#10;  ./tello_pkg/controller_node.py:94:5: E265 block comment should start with '# '&#10;  ./tello_pkg/controller_node.py:96:1: E305 expected 2 blank lines after class or function definition, found 1&#10;  ./tello_pkg/template_node.py:4:1: W293 blank line contains whitespace&#10;  ./tello_pkg/template_node.py:5:1: W293 blank line contains whitespace&#10;  ./tello_pkg/template_node.py:6:26: E261 at least two spaces before inline comment&#10;  ./tello_pkg/template_node.py:7:4: E111 indentation is not a multiple of 4&#10;  ./tello_pkg/template_node.py:8:7: E111 indentation is not a multiple of 4&#10;  ./tello_pkg/template_node.py:8:36: E261 at least two spaces before inline comment&#10;  ./tello_pkg/template_node.py:9:1: W293 blank line contains whitespace&#10;  ./tello_pkg/template_node.py:10:1: W293 blank line contains whitespace&#10;  ./tello_pkg/template_node.py:12:4: E111 indentation is not a multiple of 4&#10;  ./tello_pkg/template_node.py:13:4: E111 indentation is not a multiple of 4&#10;  ./tello_pkg/template_node.py:13:25: E261 at least two spaces before inline comment&#10;  ./tello_pkg/template_node.py:14:4: E111 indentation is not a multiple of 4&#10;  ./tello_pkg/template_node.py:15:4: E111 indentation is not a multiple of 4&#10;  ./tello_pkg/template_node.py:16:1: W293 blank line contains whitespace&#10;  ./tello_pkg/template_node.py:17:1: W293 blank line contains whitespace&#10;  ./tello_pkg/template_node.py:19:4: E111 indentation is not a multiple of 4&#10;  ./build/lib/tello_pkg/receiver_node.py:5:1: F401 'std_msgs.msg.Int64' imported but unused&#10;  ./build/lib/tello_pkg/receiver_node.py:9:1: E302 expected 2 blank lines, found 1&#10;  ./build/lib/tello_pkg/receiver_node.py:21:100: E501 line too long (104 &gt; 99 characters)&#10;  ./build/lib/tello_pkg/receiver_node.py:31:100: E501 line too long (263 &gt; 99 characters)&#10;  ./build/lib/tello_pkg/receiver_node.py:36:5: E303 too many blank lines (3)&#10;  ./build/lib/tello_pkg/receiver_node.py:51:1: W293 blank line contains whitespace&#10;  ./build/lib/tello_pkg/receiver_node.py:75:1: W293 blank line contains whitespace&#10;  ./build/lib/tello_pkg/receiver_node.py:81:29: E225 missing whitespace around operator&#10;  ./build/lib/tello_pkg/receiver_node.py:84:35: E225 missing whitespace around operator&#10;  ./build/lib/tello_pkg/receiver_node.py:87:30: E225 missing whitespace around operator&#10;  ./build/lib/tello_pkg/receiver_node.py:88:1: W293 blank line contains whitespace&#10;  ./build/lib/tello_pkg/receiver_node.py:90:30: E225 missing whitespace around operator&#10;  ./build/lib/tello_pkg/receiver_node.py:93:30: E225 missing whitespace around operator&#10;  ./build/lib/tello_pkg/receiver_node.py:101:26: W291 trailing whitespace&#10;  ./build/lib/tello_pkg/receiver_node.py:103:52: E261 at least two spaces before inline comment&#10;  ./build/lib/tello_pkg/controller_node.py:5:1: F401 'std_msgs.msg.Int64' imported but unused&#10;  ./build/lib/tello_pkg/controller_node.py:8:1: F401 'asyncio' imported but unused&#10;  ./build/lib/tello_pkg/controller_node.py:10:1: E302 expected 2 blank lines, found 1&#10;  ./build/lib/tello_pkg/controller_node.py:21:100: E501 line too long (108 &gt; 99 characters)&#10;  ./build/lib/tello_pkg/controller_node.py:25:9: E265 block comment should start with '# '&#10;  ./build/lib/tello_pkg/controller_node.py:30:9: F841 local variable 'commands1' is assigned to but never used&#10;  ./build/lib/tello_pkg/controller_node.py:61:13: E265 block comment should start with '# '&#10;  ./build/lib/tello_pkg/controller_node.py:62:13: E265 block comment should start with '# '&#10;  ./build/lib/tello_pkg/controller_node.py:63:1: W293 blank line contains whitespace&#10;  ./build/lib/tello_pkg/controller_node.py:65:13: E265 block comment should start with '# '&#10;  ./build/lib/tello_pkg/controller_node.py:73:13: E265 block comment should start with '# '&#10;  ./build/lib/tello_pkg/controller_node.py:74:17: E265 block comment should start with '# '&#10;  ./build/lib/tello_pkg/controller_node.py:75:1: W293 blank line contains whitespace&#10;  ./build/lib/tello_pkg/controller_node.py:82:28: W291 trailing whitespace&#10;  ./build/lib/tello_pkg/controller_node.py:84:52: E261 at least two spaces before inline comment&#10;  ./build/lib/tello_pkg/controller_node.py:94:5: E265 block comment should start with '# '&#10;  ./build/lib/tello_pkg/controller_node.py:96:1: E305 expected 2 blank lines after class or function definition, found 1&#10;  ./build/lib/tello_pkg/template_node.py:4:1: W293 blank line contains whitespace&#10;  ./build/lib/tello_pkg/template_node.py:5:1: W293 blank line contains whitespace&#10;  ./build/lib/tello_pkg/template_node.py:6:26: E261 at least two spaces before inline comment&#10;  ./build/lib/tello_pkg/template_node.py:7:4: E111 indentation is not a multiple of 4&#10;  ./build/lib/tello_pkg/template_node.py:8:7: E111 indentation is not a multiple of 4&#10;  ./build/lib/tello_pkg/template_node.py:8:36: E261 at least two spaces before inline comment&#10;  ./build/lib/tello_pkg/template_node.py:9:1: W293 blank line contains whitespace&#10;  ./build/lib/tello_pkg/template_node.py:10:1: W293 blank line contains whitespace&#10;  ./build/lib/tello_pkg/template_node.py:12:4: E111 indentation is not a multiple of 4&#10;  ./build/lib/tello_pkg/template_node.py:13:4: E111 indentation is not a multiple of 4&#10;  ./build/lib/tello_pkg/template_node.py:13:25: E261 at least two spaces before inline comment&#10;  ./build/lib/tello_pkg/template_node.py:14:4: E111 indentation is not a multiple of 4&#10;  ./build/lib/tello_pkg/template_node.py:15:4: E111 indentation is not a multiple of 4&#10;  ./build/lib/tello_pkg/template_node.py:16:1: W293 blank line contains whitespace&#10;  ./build/lib/tello_pkg/template_node.py:17:1: W293 blank line contains whitespace&#10;  ./build/lib/tello_pkg/template_node.py:19:4: E111 indentation is not a multiple of 4&#10;assert 1 == 0">test/test_flake8.py:23: in test_flake8
+    assert rc == 0, \
+E   AssertionError: Found 96 code style errors / warnings:
+E     ./tello_pkg/receiver_node.py:5:1: F401 'std_msgs.msg.Int64' imported but unused
+E     ./tello_pkg/receiver_node.py:9:1: E302 expected 2 blank lines, found 1
+E     ./tello_pkg/receiver_node.py:21:100: E501 line too long (104 &gt; 99 characters)
+E     ./tello_pkg/receiver_node.py:31:100: E501 line too long (263 &gt; 99 characters)
+E     ./tello_pkg/receiver_node.py:36:5: E303 too many blank lines (3)
+E     ./tello_pkg/receiver_node.py:51:1: W293 blank line contains whitespace
+E     ./tello_pkg/receiver_node.py:75:1: W293 blank line contains whitespace
+E     ./tello_pkg/receiver_node.py:81:29: E225 missing whitespace around operator
+E     ./tello_pkg/receiver_node.py:84:35: E225 missing whitespace around operator
+E     ./tello_pkg/receiver_node.py:87:30: E225 missing whitespace around operator
+E     ./tello_pkg/receiver_node.py:88:1: W293 blank line contains whitespace
+E     ./tello_pkg/receiver_node.py:90:30: E225 missing whitespace around operator
+E     ./tello_pkg/receiver_node.py:93:30: E225 missing whitespace around operator
+E     ./tello_pkg/receiver_node.py:101:26: W291 trailing whitespace
+E     ./tello_pkg/receiver_node.py:103:52: E261 at least two spaces before inline comment
+E     ./tello_pkg/controller_node.py:5:1: F401 'std_msgs.msg.Int64' imported but unused
+E     ./tello_pkg/controller_node.py:8:1: F401 'asyncio' imported but unused
+E     ./tello_pkg/controller_node.py:10:1: E302 expected 2 blank lines, found 1
+E     ./tello_pkg/controller_node.py:21:100: E501 line too long (108 &gt; 99 characters)
+E     ./tello_pkg/controller_node.py:25:9: E265 block comment should start with '# '
+E     ./tello_pkg/controller_node.py:30:9: F841 local variable 'commands1' is assigned to but never used
+E     ./tello_pkg/controller_node.py:61:13: E265 block comment should start with '# '
+E     ./tello_pkg/controller_node.py:62:13: E265 block comment should start with '# '
+E     ./tello_pkg/controller_node.py:63:1: W293 blank line contains whitespace
+E     ./tello_pkg/controller_node.py:65:13: E265 block comment should start with '# '
+E     ./tello_pkg/controller_node.py:73:13: E265 block comment should start with '# '
+E     ./tello_pkg/controller_node.py:74:17: E265 block comment should start with '# '
+E     ./tello_pkg/controller_node.py:75:1: W293 blank line contains whitespace
+E     ./tello_pkg/controller_node.py:82:28: W291 trailing whitespace
+E     ./tello_pkg/controller_node.py:84:52: E261 at least two spaces before inline comment
+E     ./tello_pkg/controller_node.py:94:5: E265 block comment should start with '# '
+E     ./tello_pkg/controller_node.py:96:1: E305 expected 2 blank lines after class or function definition, found 1
+E     ./tello_pkg/template_node.py:4:1: W293 blank line contains whitespace
+E     ./tello_pkg/template_node.py:5:1: W293 blank line contains whitespace
+E     ./tello_pkg/template_node.py:6:26: E261 at least two spaces before inline comment
+E     ./tello_pkg/template_node.py:7:4: E111 indentation is not a multiple of 4
+E     ./tello_pkg/template_node.py:8:7: E111 indentation is not a multiple of 4
+E     ./tello_pkg/template_node.py:8:36: E261 at least two spaces before inline comment
+E     ./tello_pkg/template_node.py:9:1: W293 blank line contains whitespace
+E     ./tello_pkg/template_node.py:10:1: W293 blank line contains whitespace
+E     ./tello_pkg/template_node.py:12:4: E111 indentation is not a multiple of 4
+E     ./tello_pkg/template_node.py:13:4: E111 indentation is not a multiple of 4
+E     ./tello_pkg/template_node.py:13:25: E261 at least two spaces before inline comment
+E     ./tello_pkg/template_node.py:14:4: E111 indentation is not a multiple of 4
+E     ./tello_pkg/template_node.py:15:4: E111 indentation is not a multiple of 4
+E     ./tello_pkg/template_node.py:16:1: W293 blank line contains whitespace
+E     ./tello_pkg/template_node.py:17:1: W293 blank line contains whitespace
+E     ./tello_pkg/template_node.py:19:4: E111 indentation is not a multiple of 4
+E     ./build/lib/tello_pkg/receiver_node.py:5:1: F401 'std_msgs.msg.Int64' imported but unused
+E     ./build/lib/tello_pkg/receiver_node.py:9:1: E302 expected 2 blank lines, found 1
+E     ./build/lib/tello_pkg/receiver_node.py:21:100: E501 line too long (104 &gt; 99 characters)
+E     ./build/lib/tello_pkg/receiver_node.py:31:100: E501 line too long (263 &gt; 99 characters)
+E     ./build/lib/tello_pkg/receiver_node.py:36:5: E303 too many blank lines (3)
+E     ./build/lib/tello_pkg/receiver_node.py:51:1: W293 blank line contains whitespace
+E     ./build/lib/tello_pkg/receiver_node.py:75:1: W293 blank line contains whitespace
+E     ./build/lib/tello_pkg/receiver_node.py:81:29: E225 missing whitespace around operator
+E     ./build/lib/tello_pkg/receiver_node.py:84:35: E225 missing whitespace around operator
+E     ./build/lib/tello_pkg/receiver_node.py:87:30: E225 missing whitespace around operator
+E     ./build/lib/tello_pkg/receiver_node.py:88:1: W293 blank line contains whitespace
+E     ./build/lib/tello_pkg/receiver_node.py:90:30: E225 missing whitespace around operator
+E     ./build/lib/tello_pkg/receiver_node.py:93:30: E225 missing whitespace around operator
+E     ./build/lib/tello_pkg/receiver_node.py:101:26: W291 trailing whitespace
+E     ./build/lib/tello_pkg/receiver_node.py:103:52: E261 at least two spaces before inline comment
+E     ./build/lib/tello_pkg/controller_node.py:5:1: F401 'std_msgs.msg.Int64' imported but unused
+E     ./build/lib/tello_pkg/controller_node.py:8:1: F401 'asyncio' imported but unused
+E     ./build/lib/tello_pkg/controller_node.py:10:1: E302 expected 2 blank lines, found 1
+E     ./build/lib/tello_pkg/controller_node.py:21:100: E501 line too long (108 &gt; 99 characters)
+E     ./build/lib/tello_pkg/controller_node.py:25:9: E265 block comment should start with '# '
+E     ./build/lib/tello_pkg/controller_node.py:30:9: F841 local variable 'commands1' is assigned to but never used
+E     ./build/lib/tello_pkg/controller_node.py:61:13: E265 block comment should start with '# '
+E     ./build/lib/tello_pkg/controller_node.py:62:13: E265 block comment should start with '# '
+E     ./build/lib/tello_pkg/controller_node.py:63:1: W293 blank line contains whitespace
+E     ./build/lib/tello_pkg/controller_node.py:65:13: E265 block comment should start with '# '
+E     ./build/lib/tello_pkg/controller_node.py:73:13: E265 block comment should start with '# '
+E     ./build/lib/tello_pkg/controller_node.py:74:17: E265 block comment should start with '# '
+E     ./build/lib/tello_pkg/controller_node.py:75:1: W293 blank line contains whitespace
+E     ./build/lib/tello_pkg/controller_node.py:82:28: W291 trailing whitespace
+E     ./build/lib/tello_pkg/controller_node.py:84:52: E261 at least two spaces before inline comment
+E     ./build/lib/tello_pkg/controller_node.py:94:5: E265 block comment should start with '# '
+E     ./build/lib/tello_pkg/controller_node.py:96:1: E305 expected 2 blank lines after class or function definition, found 1
+E     ./build/lib/tello_pkg/template_node.py:4:1: W293 blank line contains whitespace
+E     ./build/lib/tello_pkg/template_node.py:5:1: W293 blank line contains whitespace
+E     ./build/lib/tello_pkg/template_node.py:6:26: E261 at least two spaces before inline comment
+E     ./build/lib/tello_pkg/template_node.py:7:4: E111 indentation is not a multiple of 4
+E     ./build/lib/tello_pkg/template_node.py:8:7: E111 indentation is not a multiple of 4
+E     ./build/lib/tello_pkg/template_node.py:8:36: E261 at least two spaces before inline comment
+E     ./build/lib/tello_pkg/template_node.py:9:1: W293 blank line contains whitespace
+E     ./build/lib/tello_pkg/template_node.py:10:1: W293 blank line contains whitespace
+E     ./build/lib/tello_pkg/template_node.py:12:4: E111 indentation is not a multiple of 4
+E     ./build/lib/tello_pkg/template_node.py:13:4: E111 indentation is not a multiple of 4
+E     ./build/lib/tello_pkg/template_node.py:13:25: E261 at least two spaces before inline comment
+E     ./build/lib/tello_pkg/template_node.py:14:4: E111 indentation is not a multiple of 4
+E     ./build/lib/tello_pkg/template_node.py:15:4: E111 indentation is not a multiple of 4
+E     ./build/lib/tello_pkg/template_node.py:16:1: W293 blank line contains whitespace
+E     ./build/lib/tello_pkg/template_node.py:17:1: W293 blank line contains whitespace
+E     ./build/lib/tello_pkg/template_node.py:19:4: E111 indentation is not a multiple of 4
+E   assert 1 == 0</failure></testcase><testcase classname="tello_pkg.test.test_pep257" name="test_pep257" time="0.048" /></testsuite></testsuites>

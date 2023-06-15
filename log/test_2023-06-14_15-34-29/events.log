@@ -1,0 +1,568 @@
+[0.000000] (-) TimerEvent: {}
+[0.000505] (tello_pkg) JobQueued: {'identifier': 'tello_pkg', 'dependencies': OrderedDict([('tello_pkg', '/home/albertocastro/tello_driver/install/tello_pkg')])}
+[0.000753] (tello_pkg) JobStarted: {'identifier': 'tello_pkg'}
+[0.099360] (-) TimerEvent: {}
+[0.199693] (-) TimerEvent: {}
+[0.300060] (-) TimerEvent: {}
+[0.400417] (-) TimerEvent: {}
+[0.425069] (tello_pkg) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/albertocastro/tello_driver/src/tello_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'albertocastro', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/albertocastro', 'OLDPWD': '/home/albertocastro', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PS1': '(tello_driver_venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'SYSTEMD_EXEC_PID': '1735', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/humble/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/albertocastro/tello_driver/install:/home/albertocastro/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'albertocastro', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'albertocastro', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/albertocastro/tello_driver/tello_driver_venv/bin:/home/albertocastro/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/albertocastro-MacBookAir:@/tmp/.ICE-unix/1710,unix/albertocastro-MacBookAir:/tmp/.ICE-unix/1710', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/9e2e99ce_b45b_4815_8681_10881ae1e2e0', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.DJJG61', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.113', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/home/albertocastro/tello_driver/install/tello_pkg:/opt/ros/humble:/home/albertocastro/ros2_ws/install/tello_pkg:/home/albertocastro/ros2_ws/install/new_ros2_websockets_pkg:/home/albertocastro/ros2_ws/install/my_py_pkg:/home/albertocastro/ros2_ws/install/my_new_ros2_numpy_pkg', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/albertocastro/tello_driver/tello_driver_venv', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/albertocastro/tello_driver/build/tello_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/albertocastro/tello_driver/install/tello_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/albertocastro/ros2_ws/build/tello_pkg:/home/albertocastro/ros2_ws/install/tello_pkg/lib/python3.8/site-packages:/home/albertocastro/ros2_ws/install/new_ros2_websockets_pkg/lib/python3.8/site-packages:/home/albertocastro/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/home/albertocastro/ros2_ws/install/my_new_ros2_numpy_pkg/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/albertocastro/tello_driver/build/tello_pkg/pytest.xml --junit-prefix=tello_pkg -o cache_dir=/home/albertocastro/tello_driver/build/tello_pkg/.pytest_cache'}, 'shell': False}
+[0.500535] (-) TimerEvent: {}
+[0.601017] (-) TimerEvent: {}
+[0.701452] (-) TimerEvent: {}
+[0.801814] (-) TimerEvent: {}
+[0.878469] (tello_pkg) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[0.878848] (tello_pkg) StdoutLine: {'line': b'platform linux -- Python 3.10.6, pytest-6.2.5, py-1.10.0, pluggy-0.13.0\n'}
+[0.884564] (tello_pkg) StdoutLine: {'line': b'cachedir: /home/albertocastro/tello_driver/build/tello_pkg/.pytest_cache\n'}
+[0.884866] (tello_pkg) StdoutLine: {'line': b'rootdir: /home/albertocastro/tello_driver/src/tello_pkg\n'}
+[0.885047] (tello_pkg) StdoutLine: {'line': b'plugins: ament-flake8-0.12.6, ament-lint-0.12.6, ament-copyright-0.12.6, launch-testing-1.0.4, launch-testing-ros-0.19.4, ament-xmllint-0.12.6, ament-pep257-0.12.6, cov-3.0.0, colcon-core-0.12.1\n'}
+[0.901929] (-) TimerEvent: {}
+[1.002516] (-) TimerEvent: {}
+[1.050653] (tello_pkg) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[1.050919] (tello_pkg) StdoutLine: {'line': b'collected 3 items                                                              \x1b[0m\n'}
+[1.051176] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.060295] (tello_pkg) StdoutLine: {'line': b'test/test_copyright.py \x1b[33ms\x1b[0m\x1b[32m                                                 [ 33%]\x1b[0m\n'}
+[1.102672] (-) TimerEvent: {}
+[1.203211] (-) TimerEvent: {}
+[1.262591] (tello_pkg) StdoutLine: {'line': b'test/test_flake8.py \x1b[31mF\x1b[0m\x1b[31m                                                    [ 66%]\x1b[0m\n'}
+[1.303328] (-) TimerEvent: {}
+[1.312254] (tello_pkg) StdoutLine: {'line': b'test/test_pep257.py \x1b[32m.\x1b[0m\x1b[31m                                                    [100%]\x1b[0m\n'}
+[1.313018] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.313188] (tello_pkg) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[1.313334] (tello_pkg) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_flake8 __________________________________\x1b[0m\n'}
+[1.313474] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_flake8.py\x1b[0m:23: in test_flake8\n'}
+[1.362464] (tello_pkg) StdoutLine: {'line': b'    \x1b[94massert\x1b[39;49;00m rc == \x1b[94m0\x1b[39;49;00m, \\\n'}
+[1.363631] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found 96 code style errors / warnings:\x1b[0m\n'}
+[1.363816] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./tello_pkg/receiver_node.py:5:1: F401 'std_msgs.msg.Int64' imported but unused\x1b[0m\n"}
+[1.363992] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/receiver_node.py:9:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[1.364150] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/receiver_node.py:21:100: E501 line too long (104 > 99 characters)\x1b[0m\n'}
+[1.364298] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/receiver_node.py:31:100: E501 line too long (263 > 99 characters)\x1b[0m\n'}
+[1.364442] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/receiver_node.py:36:5: E303 too many blank lines (3)\x1b[0m\n'}
+[1.364585] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/receiver_node.py:51:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.364729] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/receiver_node.py:75:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.364930] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/receiver_node.py:81:29: E225 missing whitespace around operator\x1b[0m\n'}
+[1.365081] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/receiver_node.py:84:35: E225 missing whitespace around operator\x1b[0m\n'}
+[1.365224] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/receiver_node.py:87:30: E225 missing whitespace around operator\x1b[0m\n'}
+[1.365366] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/receiver_node.py:88:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.365509] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/receiver_node.py:90:30: E225 missing whitespace around operator\x1b[0m\n'}
+[1.365648] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/receiver_node.py:93:30: E225 missing whitespace around operator\x1b[0m\n'}
+[1.365790] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/receiver_node.py:101:26: W291 trailing whitespace\x1b[0m\n'}
+[1.365929] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/receiver_node.py:103:52: E261 at least two spaces before inline comment\x1b[0m\n'}
+[1.366075] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./tello_pkg/controller_node.py:5:1: F401 'std_msgs.msg.Int64' imported but unused\x1b[0m\n"}
+[1.366221] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./tello_pkg/controller_node.py:8:1: F401 'asyncio' imported but unused\x1b[0m\n"}
+[1.366365] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/controller_node.py:10:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[1.366504] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/controller_node.py:21:100: E501 line too long (108 > 99 characters)\x1b[0m\n'}
+[1.366643] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./tello_pkg/controller_node.py:25:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.366783] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./tello_pkg/controller_node.py:30:9: F841 local variable 'commands1' is assigned to but never used\x1b[0m\n"}
+[1.366930] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./tello_pkg/controller_node.py:61:13: E265 block comment should start with '# '\x1b[0m\n"}
+[1.367089] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./tello_pkg/controller_node.py:62:13: E265 block comment should start with '# '\x1b[0m\n"}
+[1.367231] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/controller_node.py:63:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.367369] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./tello_pkg/controller_node.py:65:13: E265 block comment should start with '# '\x1b[0m\n"}
+[1.367507] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./tello_pkg/controller_node.py:73:13: E265 block comment should start with '# '\x1b[0m\n"}
+[1.367647] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./tello_pkg/controller_node.py:74:17: E265 block comment should start with '# '\x1b[0m\n"}
+[1.367785] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/controller_node.py:75:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.367933] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/controller_node.py:82:28: W291 trailing whitespace\x1b[0m\n'}
+[1.370881] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/controller_node.py:84:52: E261 at least two spaces before inline comment\x1b[0m\n'}
+[1.371186] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./tello_pkg/controller_node.py:94:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.371376] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/controller_node.py:96:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[1.371550] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/template_node.py:4:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.371721] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/template_node.py:5:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.371886] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/template_node.py:6:26: E261 at least two spaces before inline comment\x1b[0m\n'}
+[1.372045] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/template_node.py:7:4: E111 indentation is not a multiple of 4\x1b[0m\n'}
+[1.372203] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/template_node.py:8:7: E111 indentation is not a multiple of 4\x1b[0m\n'}
+[1.372363] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/template_node.py:8:36: E261 at least two spaces before inline comment\x1b[0m\n'}
+[1.372523] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/template_node.py:9:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.372674] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/template_node.py:10:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.372859] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/template_node.py:12:4: E111 indentation is not a multiple of 4\x1b[0m\n'}
+[1.373020] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/template_node.py:13:4: E111 indentation is not a multiple of 4\x1b[0m\n'}
+[1.373170] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/template_node.py:13:25: E261 at least two spaces before inline comment\x1b[0m\n'}
+[1.373320] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/template_node.py:14:4: E111 indentation is not a multiple of 4\x1b[0m\n'}
+[1.373468] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/template_node.py:15:4: E111 indentation is not a multiple of 4\x1b[0m\n'}
+[1.373616] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/template_node.py:16:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.373760] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/template_node.py:17:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.373905] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./tello_pkg/template_node.py:19:4: E111 indentation is not a multiple of 4\x1b[0m\n'}
+[1.374050] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/receiver_node.py:5:1: F401 'std_msgs.msg.Int64' imported but unused\x1b[0m\n"}
+[1.374205] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/receiver_node.py:9:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[1.374352] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/receiver_node.py:21:100: E501 line too long (104 > 99 characters)\x1b[0m\n'}
+[1.374498] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/receiver_node.py:31:100: E501 line too long (263 > 99 characters)\x1b[0m\n'}
+[1.374641] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/receiver_node.py:36:5: E303 too many blank lines (3)\x1b[0m\n'}
+[1.374784] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/receiver_node.py:51:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.374947] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/receiver_node.py:75:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.375089] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/receiver_node.py:81:29: E225 missing whitespace around operator\x1b[0m\n'}
+[1.375230] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/receiver_node.py:84:35: E225 missing whitespace around operator\x1b[0m\n'}
+[1.375371] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/receiver_node.py:87:30: E225 missing whitespace around operator\x1b[0m\n'}
+[1.375513] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/receiver_node.py:88:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.375653] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/receiver_node.py:90:30: E225 missing whitespace around operator\x1b[0m\n'}
+[1.375810] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/receiver_node.py:93:30: E225 missing whitespace around operator\x1b[0m\n'}
+[1.375953] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/receiver_node.py:101:26: W291 trailing whitespace\x1b[0m\n'}
+[1.376094] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/receiver_node.py:103:52: E261 at least two spaces before inline comment\x1b[0m\n'}
+[1.376239] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/controller_node.py:5:1: F401 'std_msgs.msg.Int64' imported but unused\x1b[0m\n"}
+[1.376381] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/controller_node.py:8:1: F401 'asyncio' imported but unused\x1b[0m\n"}
+[1.376531] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/controller_node.py:10:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[1.376670] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/controller_node.py:21:100: E501 line too long (108 > 99 characters)\x1b[0m\n'}
+[1.376845] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/controller_node.py:25:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.376998] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/controller_node.py:30:9: F841 local variable 'commands1' is assigned to but never used\x1b[0m\n"}
+[1.377151] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/controller_node.py:61:13: E265 block comment should start with '# '\x1b[0m\n"}
+[1.377291] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/controller_node.py:62:13: E265 block comment should start with '# '\x1b[0m\n"}
+[1.377453] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/controller_node.py:63:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.377594] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/controller_node.py:65:13: E265 block comment should start with '# '\x1b[0m\n"}
+[1.377732] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/controller_node.py:73:13: E265 block comment should start with '# '\x1b[0m\n"}
+[1.377870] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/controller_node.py:74:17: E265 block comment should start with '# '\x1b[0m\n"}
+[1.378008] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/controller_node.py:75:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.378145] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/controller_node.py:82:28: W291 trailing whitespace\x1b[0m\n'}
+[1.378287] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/controller_node.py:84:52: E261 at least two spaces before inline comment\x1b[0m\n'}
+[1.378425] (tello_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/controller_node.py:94:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.378579] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/controller_node.py:96:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[1.378718] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/template_node.py:4:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.378856] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/template_node.py:5:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.378994] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/template_node.py:6:26: E261 at least two spaces before inline comment\x1b[0m\n'}
+[1.379131] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/template_node.py:7:4: E111 indentation is not a multiple of 4\x1b[0m\n'}
+[1.379270] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/template_node.py:8:7: E111 indentation is not a multiple of 4\x1b[0m\n'}
+[1.379411] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/template_node.py:8:36: E261 at least two spaces before inline comment\x1b[0m\n'}
+[1.379552] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/template_node.py:9:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.379691] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/template_node.py:10:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.379826] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/template_node.py:12:4: E111 indentation is not a multiple of 4\x1b[0m\n'}
+[1.379964] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/template_node.py:13:4: E111 indentation is not a multiple of 4\x1b[0m\n'}
+[1.380116] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/template_node.py:13:25: E261 at least two spaces before inline comment\x1b[0m\n'}
+[1.380263] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/template_node.py:14:4: E111 indentation is not a multiple of 4\x1b[0m\n'}
+[1.380402] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/template_node.py:15:4: E111 indentation is not a multiple of 4\x1b[0m\n'}
+[1.380549] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/template_node.py:16:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.380689] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/template_node.py:17:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.380848] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/lib/tello_pkg/template_node.py:19:4: E111 indentation is not a multiple of 4\x1b[0m\n'}
+[1.381006] (tello_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[1.381147] (tello_pkg) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[1.381291] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.381430] (tello_pkg) StdoutLine: {'line': b"./tello_pkg/receiver_node.py:5:1: F401 'std_msgs.msg.Int64' imported but unused\n"}
+[1.381569] (tello_pkg) StdoutLine: {'line': b'from std_msgs.msg import String, Int64\n'}
+[1.381710] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.381848] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.381984] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/receiver_node.py:9:1: E302 expected 2 blank lines, found 1\n'}
+[1.382127] (tello_pkg) StdoutLine: {'line': b'class ReceiverNode(Node):\n'}
+[1.382271] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.382411] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.382549] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/receiver_node.py:21:100: E501 line too long (104 > 99 characters)\n'}
+[1.382688] (tello_pkg) StdoutLine: {'line': b'        self.subscription = self.create_subscription(String, "drone_command", self.command_callback, 10)\n'}
+[1.382852] (tello_pkg) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.382991] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.383127] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/receiver_node.py:31:100: E501 line too long (263 > 99 characters)\n'}
+[1.383265] (tello_pkg) StdoutLine: {'line': b'        msg.data = f"Height: {str(self.tello.get_height())}, Battery: {str(self.tello.get_battery())}, Distance TOF: {str(self.tello.get_distance_tof())}\\n Pitch: {str(self.tello.get_pitch())}, Roll: {str(self.tello.get_roll())}, Yaw: {str(self.tello.get_yaw())}"\n'}
+[1.383408] (tello_pkg) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.383548] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.383684] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/receiver_node.py:36:5: E303 too many blank lines (3)\n'}
+[1.383822] (tello_pkg) StdoutLine: {'line': b'    def command_callback(self, msg):\n'}
+[1.383963] (tello_pkg) StdoutLine: {'line': b'    ^\n'}
+[1.384100] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.384237] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/receiver_node.py:51:1: W293 blank line contains whitespace\n'}
+[1.384373] (tello_pkg) StdoutLine: {'line': b'            \n'}
+[1.384510] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.384648] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.384819] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/receiver_node.py:75:1: W293 blank line contains whitespace\n'}
+[1.384968] (tello_pkg) StdoutLine: {'line': b'        \n'}
+[1.385108] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.385245] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.385380] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/receiver_node.py:81:29: E225 missing whitespace around operator\n'}
+[1.385542] (tello_pkg) StdoutLine: {'line': b'            print("Height: "+ str(self.tello.get_height()))\n'}
+[1.385679] (tello_pkg) StdoutLine: {'line': b'                            ^\n'}
+[1.385814] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.385951] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/receiver_node.py:84:35: E225 missing whitespace around operator\n'}
+[1.386090] (tello_pkg) StdoutLine: {'line': b'            print("Distance TOF: "+ str(self.tello.get_distance_tof()))\n'}
+[1.386229] (tello_pkg) StdoutLine: {'line': b'                                  ^\n'}
+[1.386365] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.386501] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/receiver_node.py:87:30: E225 missing whitespace around operator\n'}
+[1.386638] (tello_pkg) StdoutLine: {'line': b'            print("Battery: "+ str(self.tello.get_battery()))\n'}
+[1.386773] (tello_pkg) StdoutLine: {'line': b'                             ^\n'}
+[1.386908] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.387044] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/receiver_node.py:88:1: W293 blank line contains whitespace\n'}
+[1.387181] (tello_pkg) StdoutLine: {'line': b'        \n'}
+[1.387321] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.387457] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.387594] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/receiver_node.py:90:30: E225 missing whitespace around operator\n'}
+[1.387732] (tello_pkg) StdoutLine: {'line': b'            print("Speed X: "+ str(self.tello.get_speed_x()))\n'}
+[1.387868] (tello_pkg) StdoutLine: {'line': b'                             ^\n'}
+[1.388007] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.388142] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/receiver_node.py:93:30: E225 missing whitespace around operator\n'}
+[1.388278] (tello_pkg) StdoutLine: {'line': b'            print("Speed Y: "+ str(self.tello.get_speed_y()))\n'}
+[1.388418] (tello_pkg) StdoutLine: {'line': b'                             ^\n'}
+[1.388553] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.388688] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/receiver_node.py:101:26: W291 trailing whitespace\n'}
+[1.388861] (tello_pkg) StdoutLine: {'line': b'    node = ReceiverNode() \n'}
+[1.389007] (tello_pkg) StdoutLine: {'line': b'                         ^\n'}
+[1.389158] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.389294] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/receiver_node.py:103:52: E261 at least two spaces before inline comment\n'}
+[1.389430] (tello_pkg) StdoutLine: {'line': b'    executor = MultiThreadedExecutor(num_threads=2) # You can adjust the number of threads\n'}
+[1.389568] (tello_pkg) StdoutLine: {'line': b'                                                   ^\n'}
+[1.389705] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.389839] (tello_pkg) StdoutLine: {'line': b"./tello_pkg/controller_node.py:5:1: F401 'std_msgs.msg.Int64' imported but unused\n"}
+[1.389975] (tello_pkg) StdoutLine: {'line': b'from std_msgs.msg import String, Int64\n'}
+[1.390115] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.390254] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.390389] (tello_pkg) StdoutLine: {'line': b"./tello_pkg/controller_node.py:8:1: F401 'asyncio' imported but unused\n"}
+[1.390526] (tello_pkg) StdoutLine: {'line': b'import asyncio\n'}
+[1.390663] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.390800] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.390934] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/controller_node.py:10:1: E302 expected 2 blank lines, found 1\n'}
+[1.391069] (tello_pkg) StdoutLine: {'line': b'class ControllerNode(Node):\n'}
+[1.391204] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.391338] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.391472] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/controller_node.py:21:100: E501 line too long (108 > 99 characters)\n'}
+[1.391609] (tello_pkg) StdoutLine: {'line': b'        self.subscription = self.create_subscription(String, "drone_telemetry", self.telemetry_callback, 10)\n'}
+[1.391749] (tello_pkg) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.391885] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.392020] (tello_pkg) StdoutLine: {'line': b"./tello_pkg/controller_node.py:25:9: E265 block comment should start with '# '\n"}
+[1.392172] (tello_pkg) StdoutLine: {'line': b'        #Timer\n'}
+[1.392308] (tello_pkg) StdoutLine: {'line': b'        ^\n'}
+[1.392442] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.392576] (tello_pkg) StdoutLine: {'line': b"./tello_pkg/controller_node.py:30:9: F841 local variable 'commands1' is assigned to but never used\n"}
+[1.392712] (tello_pkg) StdoutLine: {'line': b'        commands1 = [\n'}
+[1.392877] (tello_pkg) StdoutLine: {'line': b'        ^\n'}
+[1.393016] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.393150] (tello_pkg) StdoutLine: {'line': b"./tello_pkg/controller_node.py:61:13: E265 block comment should start with '# '\n"}
+[1.393288] (tello_pkg) StdoutLine: {'line': b'            #self.get_logger().info(f"Command sent: {msg.data}")\n'}
+[1.393424] (tello_pkg) StdoutLine: {'line': b'            ^\n'}
+[1.393559] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.393694] (tello_pkg) StdoutLine: {'line': b"./tello_pkg/controller_node.py:62:13: E265 block comment should start with '# '\n"}
+[1.393829] (tello_pkg) StdoutLine: {'line': b'            #rclpy.spin_once(self, timeout_sec=0.5)\n'}
+[1.393969] (tello_pkg) StdoutLine: {'line': b'            ^\n'}
+[1.394105] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.394242] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/controller_node.py:63:1: W293 blank line contains whitespace\n'}
+[1.394378] (tello_pkg) StdoutLine: {'line': b'        \n'}
+[1.394514] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.394647] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.394782] (tello_pkg) StdoutLine: {'line': b"./tello_pkg/controller_node.py:65:13: E265 block comment should start with '# '\n"}
+[1.394919] (tello_pkg) StdoutLine: {'line': b'            #time.sleep(0.5)\n'}
+[1.395061] (tello_pkg) StdoutLine: {'line': b'            ^\n'}
+[1.395197] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.395331] (tello_pkg) StdoutLine: {'line': b"./tello_pkg/controller_node.py:73:13: E265 block comment should start with '# '\n"}
+[1.395469] (tello_pkg) StdoutLine: {'line': b'            #else:\n'}
+[1.395604] (tello_pkg) StdoutLine: {'line': b'            ^\n'}
+[1.395756] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.395891] (tello_pkg) StdoutLine: {'line': b"./tello_pkg/controller_node.py:74:17: E265 block comment should start with '# '\n"}
+[1.396029] (tello_pkg) StdoutLine: {'line': b'                #self.get_logger().info("Telemetry received.")\n'}
+[1.396170] (tello_pkg) StdoutLine: {'line': b'                ^\n'}
+[1.396306] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.396442] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/controller_node.py:75:1: W293 blank line contains whitespace\n'}
+[1.396580] (tello_pkg) StdoutLine: {'line': b'    \n'}
+[1.396717] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.396870] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.397008] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/controller_node.py:82:28: W291 trailing whitespace\n'}
+[1.397144] (tello_pkg) StdoutLine: {'line': b'    node = ControllerNode() \n'}
+[1.397285] (tello_pkg) StdoutLine: {'line': b'                           ^\n'}
+[1.397421] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.397557] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/controller_node.py:84:52: E261 at least two spaces before inline comment\n'}
+[1.397695] (tello_pkg) StdoutLine: {'line': b'    executor = MultiThreadedExecutor(num_threads=2) # You can adjust the number of threads\n'}
+[1.397835] (tello_pkg) StdoutLine: {'line': b'                                                   ^\n'}
+[1.397973] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.398118] (tello_pkg) StdoutLine: {'line': b"./tello_pkg/controller_node.py:94:5: E265 block comment should start with '# '\n"}
+[1.398263] (tello_pkg) StdoutLine: {'line': b'    #rclpy.spin(node)\n'}
+[1.398409] (tello_pkg) StdoutLine: {'line': b'    ^\n'}
+[1.398548] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.398686] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/controller_node.py:96:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[1.398824] (tello_pkg) StdoutLine: {'line': b'if __name__ == "__main__":\n'}
+[1.398961] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.399096] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.399231] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/template_node.py:4:1: W293 blank line contains whitespace\n'}
+[1.399366] (tello_pkg) StdoutLine: {'line': b' \n'}
+[1.399504] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.399640] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.399776] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/template_node.py:5:1: W293 blank line contains whitespace\n'}
+[1.399911] (tello_pkg) StdoutLine: {'line': b' \n'}
+[1.400044] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.400177] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.400313] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/template_node.py:6:26: E261 at least two spaces before inline comment\n'}
+[1.400447] (tello_pkg) StdoutLine: {'line': b'class MyCustomNode(Node): # MODIFY NAME\n'}
+[1.400585] (tello_pkg) StdoutLine: {'line': b'                         ^\n'}
+[1.400720] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.400878] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/template_node.py:7:4: E111 indentation is not a multiple of 4\n'}
+[1.401019] (tello_pkg) StdoutLine: {'line': b'   def __init__(self):\n'}
+[1.401156] (tello_pkg) StdoutLine: {'line': b'   ^\n'}
+[1.401294] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.401428] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/template_node.py:8:7: E111 indentation is not a multiple of 4\n'}
+[1.401564] (tello_pkg) StdoutLine: {'line': b'      super().__init__("node_name") # MODIFY NAME\n'}
+[1.401705] (tello_pkg) StdoutLine: {'line': b'      ^\n'}
+[1.401842] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.401976] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/template_node.py:8:36: E261 at least two spaces before inline comment\n'}
+[1.402144] (tello_pkg) StdoutLine: {'line': b'      super().__init__("node_name") # MODIFY NAME\n'}
+[1.402280] (tello_pkg) StdoutLine: {'line': b'                                   ^\n'}
+[1.402417] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.402554] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/template_node.py:9:1: W293 blank line contains whitespace\n'}
+[1.402703] (tello_pkg) StdoutLine: {'line': b' \n'}
+[1.402843] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.402980] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.403116] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/template_node.py:10:1: W293 blank line contains whitespace\n'}
+[1.403252] (tello_pkg) StdoutLine: {'line': b' \n'}
+[1.403381] (-) TimerEvent: {}
+[1.403561] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.403730] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.403878] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/template_node.py:12:4: E111 indentation is not a multiple of 4\n'}
+[1.404022] (tello_pkg) StdoutLine: {'line': b'   rclpy.init(args=args)\n'}
+[1.404170] (tello_pkg) StdoutLine: {'line': b'   ^\n'}
+[1.404308] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.404448] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/template_node.py:13:4: E111 indentation is not a multiple of 4\n'}
+[1.404589] (tello_pkg) StdoutLine: {'line': b'   node = MyCustomNode() # MODIFY NAME\n'}
+[1.404728] (tello_pkg) StdoutLine: {'line': b'   ^\n'}
+[1.404887] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.405028] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/template_node.py:13:25: E261 at least two spaces before inline comment\n'}
+[1.405168] (tello_pkg) StdoutLine: {'line': b'   node = MyCustomNode() # MODIFY NAME\n'}
+[1.405310] (tello_pkg) StdoutLine: {'line': b'                        ^\n'}
+[1.405447] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.405585] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/template_node.py:14:4: E111 indentation is not a multiple of 4\n'}
+[1.405722] (tello_pkg) StdoutLine: {'line': b'   rclpy.spin(node)\n'}
+[1.405860] (tello_pkg) StdoutLine: {'line': b'   ^\n'}
+[1.405995] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.406138] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/template_node.py:15:4: E111 indentation is not a multiple of 4\n'}
+[1.406282] (tello_pkg) StdoutLine: {'line': b'   rclpy.shutdown()\n'}
+[1.406424] (tello_pkg) StdoutLine: {'line': b'   ^\n'}
+[1.406561] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.406696] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/template_node.py:16:1: W293 blank line contains whitespace\n'}
+[1.406834] (tello_pkg) StdoutLine: {'line': b' \n'}
+[1.406988] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.407125] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.407260] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/template_node.py:17:1: W293 blank line contains whitespace\n'}
+[1.407398] (tello_pkg) StdoutLine: {'line': b' \n'}
+[1.407537] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.407673] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.407809] (tello_pkg) StdoutLine: {'line': b'./tello_pkg/template_node.py:19:4: E111 indentation is not a multiple of 4\n'}
+[1.407948] (tello_pkg) StdoutLine: {'line': b'   main()\n'}
+[1.408082] (tello_pkg) StdoutLine: {'line': b'   ^\n'}
+[1.408216] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.408351] (tello_pkg) StdoutLine: {'line': b"./build/lib/tello_pkg/receiver_node.py:5:1: F401 'std_msgs.msg.Int64' imported but unused\n"}
+[1.408489] (tello_pkg) StdoutLine: {'line': b'from std_msgs.msg import String, Int64\n'}
+[1.408629] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.408764] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.408923] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/receiver_node.py:9:1: E302 expected 2 blank lines, found 1\n'}
+[1.409063] (tello_pkg) StdoutLine: {'line': b'class ReceiverNode(Node):\n'}
+[1.409200] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.409334] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.409470] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/receiver_node.py:21:100: E501 line too long (104 > 99 characters)\n'}
+[1.409609] (tello_pkg) StdoutLine: {'line': b'        self.subscription = self.create_subscription(String, "drone_command", self.command_callback, 10)\n'}
+[1.409749] (tello_pkg) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.409885] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.410107] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/receiver_node.py:31:100: E501 line too long (263 > 99 characters)\n'}
+[1.410266] (tello_pkg) StdoutLine: {'line': b'        msg.data = f"Height: {str(self.tello.get_height())}, Battery: {str(self.tello.get_battery())}, Distance TOF: {str(self.tello.get_distance_tof())}\\n Pitch: {str(self.tello.get_pitch())}, Roll: {str(self.tello.get_roll())}, Yaw: {str(self.tello.get_yaw())}"\n'}
+[1.410410] (tello_pkg) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.410549] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.410686] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/receiver_node.py:36:5: E303 too many blank lines (3)\n'}
+[1.410824] (tello_pkg) StdoutLine: {'line': b'    def command_callback(self, msg):\n'}
+[1.410967] (tello_pkg) StdoutLine: {'line': b'    ^\n'}
+[1.411104] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.411243] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/receiver_node.py:51:1: W293 blank line contains whitespace\n'}
+[1.411385] (tello_pkg) StdoutLine: {'line': b'            \n'}
+[1.411522] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.411658] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.411795] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/receiver_node.py:75:1: W293 blank line contains whitespace\n'}
+[1.411931] (tello_pkg) StdoutLine: {'line': b'        \n'}
+[1.412073] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.412210] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.412346] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/receiver_node.py:81:29: E225 missing whitespace around operator\n'}
+[1.412482] (tello_pkg) StdoutLine: {'line': b'            print("Height: "+ str(self.tello.get_height()))\n'}
+[1.412633] (tello_pkg) StdoutLine: {'line': b'                            ^\n'}
+[1.412772] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.412932] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/receiver_node.py:84:35: E225 missing whitespace around operator\n'}
+[1.413073] (tello_pkg) StdoutLine: {'line': b'            print("Distance TOF: "+ str(self.tello.get_distance_tof()))\n'}
+[1.413220] (tello_pkg) StdoutLine: {'line': b'                                  ^\n'}
+[1.413897] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.414102] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/receiver_node.py:87:30: E225 missing whitespace around operator\n'}
+[1.414287] (tello_pkg) StdoutLine: {'line': b'            print("Battery: "+ str(self.tello.get_battery()))\n'}
+[1.414451] (tello_pkg) StdoutLine: {'line': b'                             ^\n'}
+[1.414607] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.414760] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/receiver_node.py:88:1: W293 blank line contains whitespace\n'}
+[1.414912] (tello_pkg) StdoutLine: {'line': b'        \n'}
+[1.415065] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.415206] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.415348] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/receiver_node.py:90:30: E225 missing whitespace around operator\n'}
+[1.415490] (tello_pkg) StdoutLine: {'line': b'            print("Speed X: "+ str(self.tello.get_speed_x()))\n'}
+[1.415628] (tello_pkg) StdoutLine: {'line': b'                             ^\n'}
+[1.415766] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.415903] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/receiver_node.py:93:30: E225 missing whitespace around operator\n'}
+[1.416041] (tello_pkg) StdoutLine: {'line': b'            print("Speed Y: "+ str(self.tello.get_speed_y()))\n'}
+[1.416182] (tello_pkg) StdoutLine: {'line': b'                             ^\n'}
+[1.416318] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.416453] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/receiver_node.py:101:26: W291 trailing whitespace\n'}
+[1.416589] (tello_pkg) StdoutLine: {'line': b'    node = ReceiverNode() \n'}
+[1.416725] (tello_pkg) StdoutLine: {'line': b'                         ^\n'}
+[1.416880] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.417019] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/receiver_node.py:103:52: E261 at least two spaces before inline comment\n'}
+[1.417173] (tello_pkg) StdoutLine: {'line': b'    executor = MultiThreadedExecutor(num_threads=2) # You can adjust the number of threads\n'}
+[1.417314] (tello_pkg) StdoutLine: {'line': b'                                                   ^\n'}
+[1.417448] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.417582] (tello_pkg) StdoutLine: {'line': b"./build/lib/tello_pkg/controller_node.py:5:1: F401 'std_msgs.msg.Int64' imported but unused\n"}
+[1.417717] (tello_pkg) StdoutLine: {'line': b'from std_msgs.msg import String, Int64\n'}
+[1.417851] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.417984] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.418118] (tello_pkg) StdoutLine: {'line': b"./build/lib/tello_pkg/controller_node.py:8:1: F401 'asyncio' imported but unused\n"}
+[1.418253] (tello_pkg) StdoutLine: {'line': b'import asyncio\n'}
+[1.418392] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.418525] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.418660] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/controller_node.py:10:1: E302 expected 2 blank lines, found 1\n'}
+[1.418818] (tello_pkg) StdoutLine: {'line': b'class ControllerNode(Node):\n'}
+[1.418953] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.419084] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.419217] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/controller_node.py:21:100: E501 line too long (108 > 99 characters)\n'}
+[1.419353] (tello_pkg) StdoutLine: {'line': b'        self.subscription = self.create_subscription(String, "drone_telemetry", self.telemetry_callback, 10)\n'}
+[1.419596] (tello_pkg) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.419737] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.419873] (tello_pkg) StdoutLine: {'line': b"./build/lib/tello_pkg/controller_node.py:25:9: E265 block comment should start with '# '\n"}
+[1.420007] (tello_pkg) StdoutLine: {'line': b'        #Timer\n'}
+[1.420141] (tello_pkg) StdoutLine: {'line': b'        ^\n'}
+[1.420276] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.420408] (tello_pkg) StdoutLine: {'line': b"./build/lib/tello_pkg/controller_node.py:30:9: F841 local variable 'commands1' is assigned to but never used\n"}
+[1.420543] (tello_pkg) StdoutLine: {'line': b'        commands1 = [\n'}
+[1.420680] (tello_pkg) StdoutLine: {'line': b'        ^\n'}
+[1.420830] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.420970] (tello_pkg) StdoutLine: {'line': b"./build/lib/tello_pkg/controller_node.py:61:13: E265 block comment should start with '# '\n"}
+[1.421107] (tello_pkg) StdoutLine: {'line': b'            #self.get_logger().info(f"Command sent: {msg.data}")\n'}
+[1.421242] (tello_pkg) StdoutLine: {'line': b'            ^\n'}
+[1.421377] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.421511] (tello_pkg) StdoutLine: {'line': b"./build/lib/tello_pkg/controller_node.py:62:13: E265 block comment should start with '# '\n"}
+[1.421647] (tello_pkg) StdoutLine: {'line': b'            #rclpy.spin_once(self, timeout_sec=0.5)\n'}
+[1.421784] (tello_pkg) StdoutLine: {'line': b'            ^\n'}
+[1.421918] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.422051] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/controller_node.py:63:1: W293 blank line contains whitespace\n'}
+[1.422196] (tello_pkg) StdoutLine: {'line': b'        \n'}
+[1.422351] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.422520] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.422681] (tello_pkg) StdoutLine: {'line': b"./build/lib/tello_pkg/controller_node.py:65:13: E265 block comment should start with '# '\n"}
+[1.422830] (tello_pkg) StdoutLine: {'line': b'            #time.sleep(0.5)\n'}
+[1.422976] (tello_pkg) StdoutLine: {'line': b'            ^\n'}
+[1.423115] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.423251] (tello_pkg) StdoutLine: {'line': b"./build/lib/tello_pkg/controller_node.py:73:13: E265 block comment should start with '# '\n"}
+[1.423388] (tello_pkg) StdoutLine: {'line': b'            #else:\n'}
+[1.423542] (tello_pkg) StdoutLine: {'line': b'            ^\n'}
+[1.423678] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.423812] (tello_pkg) StdoutLine: {'line': b"./build/lib/tello_pkg/controller_node.py:74:17: E265 block comment should start with '# '\n"}
+[1.423949] (tello_pkg) StdoutLine: {'line': b'                #self.get_logger().info("Telemetry received.")\n'}
+[1.424090] (tello_pkg) StdoutLine: {'line': b'                ^\n'}
+[1.424225] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.424358] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/controller_node.py:75:1: W293 blank line contains whitespace\n'}
+[1.424495] (tello_pkg) StdoutLine: {'line': b'    \n'}
+[1.424629] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.424763] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.424919] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/controller_node.py:82:28: W291 trailing whitespace\n'}
+[1.425058] (tello_pkg) StdoutLine: {'line': b'    node = ControllerNode() \n'}
+[1.425199] (tello_pkg) StdoutLine: {'line': b'                           ^\n'}
+[1.425334] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.425469] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/controller_node.py:84:52: E261 at least two spaces before inline comment\n'}
+[1.425606] (tello_pkg) StdoutLine: {'line': b'    executor = MultiThreadedExecutor(num_threads=2) # You can adjust the number of threads\n'}
+[1.425742] (tello_pkg) StdoutLine: {'line': b'                                                   ^\n'}
+[1.425877] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.426012] (tello_pkg) StdoutLine: {'line': b"./build/lib/tello_pkg/controller_node.py:94:5: E265 block comment should start with '# '\n"}
+[1.426149] (tello_pkg) StdoutLine: {'line': b'    #rclpy.spin(node)\n'}
+[1.426290] (tello_pkg) StdoutLine: {'line': b'    ^\n'}
+[1.426425] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.426560] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/controller_node.py:96:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[1.426700] (tello_pkg) StdoutLine: {'line': b'if __name__ == "__main__":\n'}
+[1.426837] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.426973] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.427108] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/template_node.py:4:1: W293 blank line contains whitespace\n'}
+[1.427246] (tello_pkg) StdoutLine: {'line': b' \n'}
+[1.427389] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.427527] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.427663] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/template_node.py:5:1: W293 blank line contains whitespace\n'}
+[1.427803] (tello_pkg) StdoutLine: {'line': b' \n'}
+[1.427940] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.428075] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.428212] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/template_node.py:6:26: E261 at least two spaces before inline comment\n'}
+[1.428353] (tello_pkg) StdoutLine: {'line': b'class MyCustomNode(Node): # MODIFY NAME\n'}
+[1.428496] (tello_pkg) StdoutLine: {'line': b'                         ^\n'}
+[1.428634] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.428769] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/template_node.py:7:4: E111 indentation is not a multiple of 4\n'}
+[1.428928] (tello_pkg) StdoutLine: {'line': b'   def __init__(self):\n'}
+[1.429067] (tello_pkg) StdoutLine: {'line': b'   ^\n'}
+[1.429204] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.429341] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/template_node.py:8:7: E111 indentation is not a multiple of 4\n'}
+[1.429482] (tello_pkg) StdoutLine: {'line': b'      super().__init__("node_name") # MODIFY NAME\n'}
+[1.429635] (tello_pkg) StdoutLine: {'line': b'      ^\n'}
+[1.429785] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.429932] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/template_node.py:8:36: E261 at least two spaces before inline comment\n'}
+[1.430075] (tello_pkg) StdoutLine: {'line': b'      super().__init__("node_name") # MODIFY NAME\n'}
+[1.430225] (tello_pkg) StdoutLine: {'line': b'                                   ^\n'}
+[1.430413] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.430592] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/template_node.py:9:1: W293 blank line contains whitespace\n'}
+[1.430764] (tello_pkg) StdoutLine: {'line': b' \n'}
+[1.430947] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.431206] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.431413] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/template_node.py:10:1: W293 blank line contains whitespace\n'}
+[1.431671] (tello_pkg) StdoutLine: {'line': b' \n'}
+[1.431849] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.432007] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.432160] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/template_node.py:12:4: E111 indentation is not a multiple of 4\n'}
+[1.432311] (tello_pkg) StdoutLine: {'line': b'   rclpy.init(args=args)\n'}
+[1.432465] (tello_pkg) StdoutLine: {'line': b'   ^\n'}
+[1.432610] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.432752] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/template_node.py:13:4: E111 indentation is not a multiple of 4\n'}
+[1.432917] (tello_pkg) StdoutLine: {'line': b'   node = MyCustomNode() # MODIFY NAME\n'}
+[1.433061] (tello_pkg) StdoutLine: {'line': b'   ^\n'}
+[1.433201] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.433338] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/template_node.py:13:25: E261 at least two spaces before inline comment\n'}
+[1.433494] (tello_pkg) StdoutLine: {'line': b'   node = MyCustomNode() # MODIFY NAME\n'}
+[1.433637] (tello_pkg) StdoutLine: {'line': b'                        ^\n'}
+[1.433774] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.433911] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/template_node.py:14:4: E111 indentation is not a multiple of 4\n'}
+[1.434050] (tello_pkg) StdoutLine: {'line': b'   rclpy.spin(node)\n'}
+[1.434188] (tello_pkg) StdoutLine: {'line': b'   ^\n'}
+[1.434324] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.434459] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/template_node.py:15:4: E111 indentation is not a multiple of 4\n'}
+[1.434596] (tello_pkg) StdoutLine: {'line': b'   rclpy.shutdown()\n'}
+[1.434736] (tello_pkg) StdoutLine: {'line': b'   ^\n'}
+[1.434875] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.435011] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/template_node.py:16:1: W293 blank line contains whitespace\n'}
+[1.435148] (tello_pkg) StdoutLine: {'line': b' \n'}
+[1.435282] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.435416] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.435551] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/template_node.py:17:1: W293 blank line contains whitespace\n'}
+[1.435688] (tello_pkg) StdoutLine: {'line': b' \n'}
+[1.435826] (tello_pkg) StdoutLine: {'line': b'^\n'}
+[1.435960] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.436095] (tello_pkg) StdoutLine: {'line': b'./build/lib/tello_pkg/template_node.py:19:4: E111 indentation is not a multiple of 4\n'}
+[1.436230] (tello_pkg) StdoutLine: {'line': b'   main()\n'}
+[1.436364] (tello_pkg) StdoutLine: {'line': b'   ^\n'}
+[1.436497] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.436631] (tello_pkg) StdoutLine: {'line': b'14    E111 indentation is not a multiple of 4\n'}
+[1.436766] (tello_pkg) StdoutLine: {'line': b'10    E225 missing whitespace around operator\n'}
+[1.436952] (tello_pkg) StdoutLine: {'line': b'10    E261 at least two spaces before inline comment\n'}
+[1.437090] (tello_pkg) StdoutLine: {'line': b"14    E265 block comment should start with '# '\n"}
+[1.437225] (tello_pkg) StdoutLine: {'line': b'4     E302 expected 2 blank lines, found 1\n'}
+[1.437361] (tello_pkg) StdoutLine: {'line': b'2     E303 too many blank lines (3)\n'}
+[1.437497] (tello_pkg) StdoutLine: {'line': b'2     E305 expected 2 blank lines after class or function definition, found 1\n'}
+[1.437634] (tello_pkg) StdoutLine: {'line': b'6     E501 line too long (108 > 99 characters)\n'}
+[1.437768] (tello_pkg) StdoutLine: {'line': b"6     F401 'std_msgs.msg.Int64' imported but unused\n"}
+[1.437905] (tello_pkg) StdoutLine: {'line': b"2     F841 local variable 'commands1' is assigned to but never used\n"}
+[1.438063] (tello_pkg) StdoutLine: {'line': b'4     W291 trailing whitespace\n'}
+[1.438211] (tello_pkg) StdoutLine: {'line': b'22    W293 blank line contains whitespace\n'}
+[1.438373] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.438534] (tello_pkg) StdoutLine: {'line': b'12 files checked\n'}
+[1.438682] (tello_pkg) StdoutLine: {'line': b'96 errors\n'}
+[1.438824] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.438965] (tello_pkg) StdoutLine: {'line': b"'E'-type errors: 62\n"}
+[1.439105] (tello_pkg) StdoutLine: {'line': b"'F'-type errors: 8\n"}
+[1.439248] (tello_pkg) StdoutLine: {'line': b"'W'-type errors: 26\n"}
+[1.439386] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.439521] (tello_pkg) StdoutLine: {'line': b'Checked files:\n'}
+[1.439659] (tello_pkg) StdoutLine: {'line': b'\n'}
+[1.439795] (tello_pkg) StdoutLine: {'line': b'* ./setup.py\n'}
+[1.439932] (tello_pkg) StdoutLine: {'line': b'* ./tello_pkg/receiver_node.py\n'}
+[1.440067] (tello_pkg) StdoutLine: {'line': b'* ./tello_pkg/controller_node.py\n'}
+[1.440203] (tello_pkg) StdoutLine: {'line': b'* ./tello_pkg/template_node.py\n'}
+[1.440343] (tello_pkg) StdoutLine: {'line': b'* ./tello_pkg/__init__.py\n'}
+[1.440479] (tello_pkg) StdoutLine: {'line': b'* ./build/lib/tello_pkg/receiver_node.py\n'}
+[1.440614] (tello_pkg) StdoutLine: {'line': b'* ./build/lib/tello_pkg/controller_node.py\n'}
+[1.440748] (tello_pkg) StdoutLine: {'line': b'* ./build/lib/tello_pkg/template_node.py\n'}
+[1.440910] (tello_pkg) StdoutLine: {'line': b'* ./build/lib/tello_pkg/__init__.py\n'}
+[1.441046] (tello_pkg) StdoutLine: {'line': b'* ./test/test_pep257.py\n'}
+[1.441181] (tello_pkg) StdoutLine: {'line': b'* ./test/test_flake8.py\n'}
+[1.441316] (tello_pkg) StdoutLine: {'line': b'* ./test/test_copyright.py\n'}
+[1.441454] (tello_pkg) StdoutLine: {'line': b'----------------------------- Captured stderr call -----------------------------\n'}
+[1.441590] (tello_pkg) StdoutLine: {'line': b'option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future\n'}
+[1.441726] (tello_pkg) StdoutLine: {'line': b'- generated xml file: /home/albertocastro/tello_driver/build/tello_pkg/pytest.xml -\n'}
+[1.441861] (tello_pkg) StdoutLine: {'line': b'=========================== short test summary info ============================\n'}
+[1.441997] (tello_pkg) StdoutLine: {'line': b'FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 96 code style...\n'}
+[1.442131] (tello_pkg) StdoutLine: {'line': b'\x1b[31m============== \x1b[31m\x1b[1m1 failed\x1b[0m, \x1b[32m1 passed\x1b[0m, \x1b[33m1 skipped\x1b[0m, \x1b[33m2 warnings\x1b[0m\x1b[31m in 0.49s\x1b[0m\x1b[31m ==============\x1b[0m\n'}
+[1.442269] (tello_pkg) StderrLine: {'line': b'\x1b[33m=============================== warnings summary ===============================\x1b[0m\n'}
+[1.442444] (tello_pkg) StderrLine: {'line': b'test/test_flake8.py::test_flake8\n'}
+[1.442586] (tello_pkg) StderrLine: {'line': b'test/test_flake8.py::test_flake8\n'}
+[1.442723] (tello_pkg) StderrLine: {'line': b'  Warning: SelectableGroups dict interface is deprecated. Use select.\n'}
+[1.442859] (tello_pkg) StderrLine: {'line': b'\n'}
+[1.442992] (tello_pkg) StderrLine: {'line': b'-- Docs: https://docs.pytest.org/en/stable/warnings.html\n'}
+[1.485175] (tello_pkg) CommandEnded: {'returncode': 1}
+[1.486242] (tello_pkg) TestFailure: {'identifier': 'tello_pkg'}
+[1.486306] (tello_pkg) JobEnded: {'identifier': 'tello_pkg', 'rc': 0}
+[1.487104] (-) EventReactorShutdown: {}

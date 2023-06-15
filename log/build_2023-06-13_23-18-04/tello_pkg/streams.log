@@ -1,0 +1,28 @@
+[0.828s] Invoking command in '/home/albertocastro/tello_driver/build/tello_pkg': PS1=(tello_driver_venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/albertocastro/tello_driver/build/tello_pkg/prefix_override:/home/albertocastro/tello_driver/install/tello_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/albertocastro/tello_driver/build/tello_pkg/build --no-deps install_data
+[1.174s] running develop
+[1.175s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.175s]   warnings.warn(
+[1.177s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.177s]   warnings.warn(
+[1.264s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[1.264s]   warnings.warn(
+[1.265s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[1.266s]   warnings.warn(
+[1.266s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[1.266s]   warnings.warn(
+[1.412s] running egg_info
+[1.412s] writing tello_pkg.egg-info/PKG-INFO
+[1.413s] writing dependency_links to tello_pkg.egg-info/dependency_links.txt
+[1.413s] writing entry points to tello_pkg.egg-info/entry_points.txt
+[1.413s] writing requirements to tello_pkg.egg-info/requires.txt
+[1.413s] writing top-level names to tello_pkg.egg-info/top_level.txt
+[1.417s] reading manifest file 'tello_pkg.egg-info/SOURCES.txt'
+[1.418s] writing manifest file 'tello_pkg.egg-info/SOURCES.txt'
+[1.420s] running build_ext
+[1.421s] Creating /home/albertocastro/tello_driver/install/tello_pkg/lib/python3.10/site-packages/tello-pkg.egg-link (link to .)
+[1.422s] Installing controller_node script to /home/albertocastro/tello_driver/install/tello_pkg/lib/tello_pkg
+[1.422s] Installing receiver_node script to /home/albertocastro/tello_driver/install/tello_pkg/lib/tello_pkg
+[1.423s] 
+[1.423s] Installed /home/albertocastro/tello_driver/build/tello_pkg
+[1.423s] running install_data
+[1.465s] Invoked command in '/home/albertocastro/tello_driver/build/tello_pkg' returned '0': PS1=(tello_driver_venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/albertocastro/tello_driver/build/tello_pkg/prefix_override:/home/albertocastro/tello_driver/install/tello_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/albertocastro/tello_driver/build/tello_pkg/build --no-deps install_data

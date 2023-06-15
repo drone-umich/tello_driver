@@ -1,0 +1,91 @@
+[0.568s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'test']
+[0.568s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='test', build_base='build', install_base='install', merge_install=False, test_result_base=None, retest_until_fail=0, retest_until_pass=0, abort_on_error=False, return_code_on_test_failure=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], ctest_args=None, python_testing=None, pytest_args=None, pytest_with_coverage=False, unittest_args=None, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fe0c8ec86d0>, verb_extension=<colcon_core.verb.test.TestVerb object at 0x7fe0c969e8c0>, main=<bound method TestVerb.main of <colcon_core.verb.test.TestVerb object at 0x7fe0c969e8c0>>)
+[0.604s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.604s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.605s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.605s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.605s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.605s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.605s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/albertocastro/tello_driver'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_pkg) by extension 'ignore'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_pkg) by extension 'ignore_ament_install'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_pkg) by extensions ['colcon_pkg']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_pkg) by extension 'colcon_pkg'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_pkg) by extensions ['colcon_meta']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_pkg) by extension 'colcon_meta'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_pkg) by extensions ['ros']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_pkg) by extension 'ros'
+[0.635s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tello_pkg' with type 'ros.ament_python' and name 'tello_pkg'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(tello_driver_venv) by extensions ['ignore', 'ignore_ament_install']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(tello_driver_venv) by extension 'ignore'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(tello_driver_venv) ignored
+[0.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.648s] Level 5:colcon.colcon_core.verb:set package 'tello_pkg' test argument 'ctest_args' from command line to 'None'
+[0.648s] Level 5:colcon.colcon_core.verb:set package 'tello_pkg' test argument 'python_testing' from command line to 'None'
+[0.648s] Level 5:colcon.colcon_core.verb:set package 'tello_pkg' test argument 'pytest_args' from command line to 'None'
+[0.648s] Level 5:colcon.colcon_core.verb:set package 'tello_pkg' test argument 'pytest_with_coverage' from command line to 'False'
+[0.648s] Level 5:colcon.colcon_core.verb:set package 'tello_pkg' test argument 'unittest_args' from command line to 'None'
+[0.648s] Level 5:colcon.colcon_core.verb:set package 'tello_pkg' test argument 'retest_until_pass' from command line to '0'
+[0.648s] Level 5:colcon.colcon_core.verb:set package 'tello_pkg' test argument 'retest_until_fail' from command line to '0'
+[0.648s] DEBUG:colcon.colcon_core.verb.test:Testing package 'tello_pkg' with the following arguments: {'build_base': '/home/albertocastro/tello_driver/build/tello_pkg', 'ctest_args': None, 'install_base': '/home/albertocastro/tello_driver/install/tello_pkg', 'path': '/home/albertocastro/tello_driver/src/tello_pkg', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[0.649s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.653s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.654s] INFO:colcon.colcon_ros.task.ament_python.test:Testing ROS package in '/home/albertocastro/tello_driver/src/tello_pkg' with build type'ament_python'
+[0.654s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/home/albertocastro/tello_driver/src/tello_pkg'
+[0.664s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.664s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.664s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.078s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[1.078s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'pytest'
+[1.081s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/albertocastro/tello_driver/src/tello_pkg': PS1=(tello_driver_venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTEST_ADDOPTS=--tb=short --junit-xml=/home/albertocastro/tello_driver/build/tello_pkg/pytest.xml --junit-prefix=tello_pkg -o cache_dir=/home/albertocastro/tello_driver/build/tello_pkg/.pytest_cache /usr/bin/python3 -m pytest
+[2.139s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.139s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.139s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/albertocastro/tello_driver/src/tello_pkg' returned '1': PS1=(tello_driver_venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTEST_ADDOPTS=--tb=short --junit-xml=/home/albertocastro/tello_driver/build/tello_pkg/pytest.xml --junit-prefix=tello_pkg -o cache_dir=/home/albertocastro/tello_driver/build/tello_pkg/.pytest_cache /usr/bin/python3 -m pytest
+[2.139s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.140s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.156s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.157s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.157s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.177s] DEBUG:colcon.colcon_core.event_reactor:joined thread
