@@ -23,7 +23,7 @@ class ControllerNode(Node):
         self.send_commands()
 
         #Timer
-        self.create_timer(0.5, self.telemetry_callback)
+        self.create_timer(0.5, self.telemetry_check)
 
     def send_commands(self):
         # Commands to be sent
@@ -58,23 +58,21 @@ class ControllerNode(Node):
             msg = String()
             msg.data = command
             self.publisher_.publish(msg)
-            #self.get_logger().info(f"Command sent: {msg.data}")
-            #rclpy.spin_once(self, timeout_sec=0.5)
+            self.get_logger().info(f"Command sent: {msg.data}")
+            rclpy.spin_once(self, timeout_sec=0.5)
         
             # Wait for the command to be processed
-            #time.sleep(0.5)
+            time.sleep(0.5)
 
-            # Process incoming messages after each command
-            rclpy.spin_once(self, timeout_sec=0.3)
-
-            # Check if telemetry was received
-            if self.last_telemetry_time is None or time.time() - self.last_telemetry_time > 0.3:
-                self.get_logger().info("No telemetry received.")
-            #else:
-                #self.get_logger().info("Telemetry received.")
+    def telemetry_check(self):
+        if self.last_telemetry_time is None or time.time() - self.last_telemetry_time > 0.5:
+            self.get_logger().info("No telemetry received.")
+        #else:
+            #self.get_logger().info("Telemetry received.")
     
     def telemetry_callback(self, msg):
         self.get_logger().info(f"Telemetry: {msg.data}")
+        self.last_telemetry_time = time.time()
 
 
 def main(args=None):

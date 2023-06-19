@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             "controller_node = tello_pkg.controller_node:main",
-            "receiver_node = tello_pkg.receiver_node:main"
+            "receiver_node = tello_pkg.receiver_node:main",
+            "cam_node = tello_pkg.cam_receiver_node:main"
         ],
     },
 )
