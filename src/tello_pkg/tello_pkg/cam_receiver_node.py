@@ -7,6 +7,9 @@ from rclpy.node import Node
 from std_msgs.msg import String, Int64
 from djitellopy import Tello
 from rclpy.executors import MultiThreadedExecutor
+import cv2
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge
 
 class ReceiverNode(Node):
     def __init__(self):
@@ -27,6 +30,27 @@ class ReceiverNode(Node):
 
         timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.publish_telemetry)
+
+        self.publisher_ = self.create_publisher(Image, 'drone_video', 10)
+        self.bridge = CvBridge()
+
+        # Start video stream
+        self.tello.streamon()
+        self.get_logger().info("Video stream started")
+
+        # Start a periodic timer to publish frames
+        self.timer2 = self.create_timer(1.0/30.0, self.publish_frame)
+
+    def publish_frame(self):
+        frame_read = self.tello.get_frame_read()
+        if frame_read.stopped:
+            self.get_logger().info("Video stream stopped")
+            self.tello.streamoff()
+            return
+
+        frame = frame_read.frame
+        image_message = self.bridge.cv2_to_imgmsg(frame, encoding="bgr8")
+        self.publisher_.publish(image_message)
 
     def publish_telemetry(self):
         msg = String()
@@ -102,7 +126,7 @@ def main(args=None):
     rclpy.init(args=args)
     node = ReceiverNode() 
 
-    executor = MultiThreadedExecutor(num_threads=2) # You can adjust the number of threads
+    executor = MultiThreadedExecutor(num_threads=3) # You can adjust the number of threads
 
     executor.add_node(node)
 

@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 
 import rclpy
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge
 from rclpy.node import Node
 from std_msgs.msg import String, Int64
 import time
 from rclpy.executors import MultiThreadedExecutor
 import asyncio
+import cv2
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge
 
 class ControllerNode(Node):
     def __init__(self):
@@ -19,11 +24,20 @@ class ControllerNode(Node):
 
         # Subscriber
         self.subscription = self.create_subscription(String, "drone_telemetry", self.telemetry_callback, 10)
+        self.image_subscriber = self.create_subscription(Image, "drone_video", self.image_callback, 10)  # Subscriber for drone video feed
+
+        self.bridge = CvBridge()  # For converting between ROS Image messages and OpenCV images
 
         self.send_commands()
 
         #Timer
         self.create_timer(0.5, self.telemetry_check)
+
+    def image_callback(self, msg):
+        # Convert ROS Image message to OpenCV image
+        cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+        cv2.imshow("Drone Video Feed", cv_image)
+        cv2.waitKey(1)
 
     def send_commands(self):
         # Commands to be sent

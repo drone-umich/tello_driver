@@ -64,14 +64,11 @@ class ControllerNode(Node):
             # Wait for the command to be processed
             time.sleep(0.5)
 
-            # Process incoming messages after each command
-            #rclpy.spin_once(self, timeout_sec=0.5)
-
     def telemetry_check(self):
         if self.last_telemetry_time is None or time.time() - self.last_telemetry_time > 0.5:
             self.get_logger().info("No telemetry received.")
-        else:
-            self.get_logger().info("Telemetry received.")
+        #else:
+            #self.get_logger().info("Telemetry received.")
     
     def telemetry_callback(self, msg):
         self.get_logger().info(f"Telemetry: {msg.data}")
